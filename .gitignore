@@ -1,0 +1,5 @@
+.env
+leads_enriched.csv
+leads_enriched_backup.csv
+__pycache__/
+*.pyc

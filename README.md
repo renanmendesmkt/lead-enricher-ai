@@ -19,10 +19,9 @@ cp .env.example .env   # paste your GEMINI_API_KEY (free tier at aistudio.google
 python enricher.py --input leads.csv --output leads_enriched.csv
 ```
 
-Output: `leads_enriched.csv` with the original columns plus `cargo_estimado`
-(job title), `tamanho_empresa` (company size), `intencao_compra` (buying
-intent), `sugestao_abordagem` (outreach angle), plus a terminal summary of
-intent distribution across the processed leads.
+Output: `leads_enriched.csv` with the original columns plus `estimated_title`,
+`company_size`, `buying_intent`, and `outreach_angle`, plus a terminal
+summary of intent distribution across the processed leads.
 
 ## Why Gemini
 

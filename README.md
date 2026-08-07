@@ -1,28 +1,30 @@
 # Lead Enricher AI
 
-Script que pega uma lista crua de leads (nome, email, empresa) e devolve cada
-um qualificado: cargo provável, porte da empresa, temperatura de compra e uma
-sugestão de abordagem específica para aquele contato.
+Built solo with AI-assisted development to solve a real prospecting
+bottleneck fast, not a software engineering exercise. Takes a raw list of
+leads (name, email, company) and returns each one qualified: likely job
+title, company size, buying intent, and a specific outreach angle for that
+contact.
 
-Motivação: em prospecção manual, qualificar lead a lead consome tempo que
-deveria ir pra abordagem em si. Esse script terceiriza a etapa de pesquisa
-inicial pro modelo, e devolve uma tabela pronta pra priorizar quem abordar
-primeiro.
+Why: in manual prospecting, qualifying leads one by one eats time that
+should go into the actual outreach. This tool offloads that research step
+to the model and returns a ready-to-prioritize table, going from raw list
+to ready-to-work output in one run.
 
-## Uso
+## Usage
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env   # cole sua GEMINI_API_KEY (gratuita em aistudio.google.com/apikey)
+cp .env.example .env   # paste your GEMINI_API_KEY (free tier at aistudio.google.com/apikey)
 python enricher.py --input leads.csv --output leads_enriched.csv
 ```
 
-Saída: `leads_enriched.csv` com as colunas originais + `cargo_estimado`,
-`tamanho_empresa`, `intencao_compra`, `sugestao_abordagem`, mais um resumo no
-terminal da distribuição de temperatura dos leads processados.
+Output: `leads_enriched.csv` with the original columns plus `cargo_estimado`
+(job title), `tamanho_empresa` (company size), `intencao_compra` (buying
+intent), `sugestao_abordagem` (outreach angle), plus a terminal summary of
+intent distribution across the processed leads.
 
-## Por que Gemini
+## Why Gemini
 
-Camada gratuita permanente, sem cartão de crédito. Pra um script de
-prospecção rodado em lote, isso importa mais que ganhos marginais de
-qualidade de um modelo pago.
+Permanent free tier, no credit card. For a batch prospecting script, that
+matters more than marginal quality gains from a paid model.

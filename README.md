@@ -23,6 +23,14 @@ Output: `leads_enriched.csv` with the original columns plus `estimated_title`,
 `company_size`, `buying_intent`, and `outreach_angle`, plus a terminal
 summary of intent distribution across the processed leads.
 
+### Example output
+
+| name | company | estimated_title | company_size | buying_intent | outreach_angle |
+|---|---|---|---|---|---|
+| John Silva | TechStartup | Founder/Executive | Startup | Warm | "I've been following TechStartup's recent growth and would love to share how we've helped similar startups scale their operations efficiently." |
+| Maria Oliveira | GlobalSales | Sales Manager | Medium | Warm | "Hi Maria, I noticed GlobalSales is expanding its reach and wanted to share how we've helped similar sales teams streamline their lead qualification process." |
+| Carlos Souza | Small Biz Co | Owner/Founder | Small | Warm | "Hi Carlos, I've been following Small Biz Co and would love to share a few strategies to help you scale your operations more efficiently this quarter." |
+
 ## Why Gemini
 
 Permanent free tier, no credit card. For a batch prospecting script, that
